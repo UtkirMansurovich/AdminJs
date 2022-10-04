@@ -1,0 +1,7 @@
+.side-bar {
+    display: grid;
+    grid-row: 1 / -1;
+    grid-column: 1 / 2;
+
+    background-color: $color-success;
+}

@@ -1,0 +1,45 @@
+.form {
+    max-width: 40rem;
+
+    padding: .8rem 1.6rem;
+    display: grid;
+    grid-template-rows: 3.8rem;
+    grid-template-columns: minmax(14rem, 1fr) 3.8rem;
+
+    align-content: center;
+
+    &__input-search {
+        border-radius: 10px 0 0 10px;
+        outline: none;
+        border: 0;
+        padding: .6rem 1.2rem;
+        background-color: $color-light;
+
+        &::placeholder {
+            color: $color-secondary;
+            font-size: 1.2rem;
+        }
+
+        &:focus {
+            box-shadow: 0 0 3px 3px rgba(78,115,223, 0.5);
+        }
+    }
+
+    &__btn-search {
+        background-color: $color-primary;
+        border: 0;
+        border-radius: 0 10px 10px 0;
+        padding: .6rem 1.2rem;
+        cursor: pointer;
+
+        &:focus {
+            box-shadow: 0 0 3px 3px rgba(78,115,223, 0.5);
+        }
+
+        &--icon-search {
+            fill: #fff;
+            width: 1.4rem;
+            height: 1.4rem;
+        }
+    }
+}

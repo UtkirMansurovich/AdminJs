@@ -1,0 +1,29 @@
+.alert-email {
+    cursor: pointer;
+    position: relative;
+
+    &__icon {
+        width: 2rem;
+        height: 2rem;
+        fill: $color-secondary;
+        opacity: .5;
+        transition: all .2s ease-out;
+        
+        &:hover {
+            fill: $color-dark;
+        }
+    }
+
+    &__degree {
+        position: absolute;
+        top: -8px;
+        right: -8px;
+        background-color: $color-danger;
+        color: #fff;
+        padding: 3px;
+        border-radius: 4px;
+        line-height: 1;
+        font-weight: 700;
+        text-align: center;
+    }
+}

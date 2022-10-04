@@ -10,12 +10,47 @@
     <link rel="shortcut icon" href="img/favicon.png" type="image/png">
     <link rel="stylesheet" href="css/icon-font.css">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;0,400;1,400&family=Nunito:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
+
     <title>Direct &mdash; web control panel</title>
 </head>
-<body>
-    <div>Top Bar hello world</div>
-    <div>Side Bar</div>
-    <div>Body</div>
-    <div>Footer</div>
+<body class="container">
+
+    <!-- TOP BAR -->
+    <div class="top-bar">
+        <form action="#" class="form">
+            <input class="form__input-search" type="text" name="search" id="search" placeholder="Search for...">
+            <button class="form__btn-search">
+                <svg class="form__btn-search--icon-search" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 513.749 513.749" style="enable-background:'new 0 0 513.749 513.749'" xmlSpace="preserve" width="512" height="512">
+                    <g>
+                       <path d="M504.352,459.061l-99.435-99.477c74.402-99.427,54.115-240.344-45.312-314.746S119.261-9.277,44.859,90.15   S-9.256,330.494,90.171,404.896c79.868,59.766,189.565,59.766,269.434,0l99.477,99.477c12.501,12.501,32.769,12.501,45.269,0   c12.501-12.501,12.501-32.769,0-45.269L504.352,459.061z M225.717,385.696c-88.366,0-160-71.634-160-160s71.634-160,160-160   s160,71.634,160,160C385.623,314.022,314.044,385.602,225.717,385.696z"/>
+                    </g>
+                </svg>
+            </button>
+        </form>
+
+        <div class="alert-email">
+            <svg class="alert-email__icon" xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 24 24" width="512" height="512">
+                <path d="M4.068,18H19.724a3,3,0,0,0,2.821-4.021L19.693,6.094A8.323,8.323,0,0,0,11.675,0h0A8.321,8.321,0,0,0,3.552,6.516l-2.35,7.6A3,3,0,0,0,4.068,18Z"/><path d="M7.1,20a5,5,0,0,0,9.8,0Z"/>
+            </svg>
+            <span class="alert-email__degree">3+</span>
+        </div>
+
+        <div class="alert-email">
+            <svg class="alert-email__icon" xmlns="http://www.w3.org/2000/svg" id="Filled" viewBox="0 0 24 24" width="512" height="512"><path d="M23.954,5.542,15.536,13.96a5.007,5.007,0,0,1-7.072,0L.046,5.542C.032,5.7,0,5.843,0,6V18a5.006,5.006,0,0,0,5,5H19a5.006,5.006,0,0,0,5-5V6C24,5.843,23.968,5.7,23.954,5.542Z"/><path d="M14.122,12.546l9.134-9.135A4.986,4.986,0,0,0,19,1H5A4.986,4.986,0,0,0,.744,3.411l9.134,9.135A3.007,3.007,0,0,0,14.122,12.546Z"/></svg>
+            <span class="alert-email__degree">7</span>
+        </div>
+
+        <div class="user">
+            <h4 class="user__name">Utkir Musurmankulov</h4>
+            <img class="user__img" src="./img/utkir.JPG" alt="User Photo">
+        </div>
+   </div>
+
+    <nav class="side-bar">Side Bar</nav>
+    <div class="body">Body</div>
+    <footer class="footer">Footer</footer>
 </body>
 </html>
