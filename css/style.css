@@ -30,6 +30,11 @@ body {
   border-bottom: 1px solid #e3e6f0;
   background-color: #f8f9fc; }
 
+.body-card {
+  width: 100%;
+  border: none;
+  padding: 2rem; }
+
 .title {
   grid-column: 1 / 2;
   font-size: 1.6rem;
@@ -48,6 +53,9 @@ body {
   font-size: 1.6rem;
   font-weight: 400;
   color: #858796; }
+
+.mb-small {
+  margin-bottom: 1rem; }
 
 .form {
   max-width: 40rem;
@@ -263,6 +271,13 @@ body {
   .color-card__box:nth-child(8) {
     background-color: #5a5c69; }
 
+.development-card {
+  grid-row: 6 / 7;
+  grid-column: 7 / -1;
+  background-color: #fff;
+  box-shadow: 0 0.15rem 1.75rem 0 rgba(58, 59, 69, 0.15);
+  border-radius: 0.56rem; }
+
 .illustration-card {
   grid-row: 4 / 6;
   grid-column: 7 / -1;
@@ -294,10 +309,13 @@ body {
   padding: 2.4rem; }
 
 .footer {
-  display: grid;
   grid-row: 3 / 4;
   grid-column: 2 / -1;
-  background-color: #f6c23e; }
+  background-color: #fff;
+  padding: 2rem 0;
+  text-align: center;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.4rem; }
 
 .side-bar {
   display: grid;
