@@ -21,6 +21,7 @@ body {
     width: 100%;
     height: 100vh;
     display: grid;
-    grid-template-rows: 7rem minmax(calc(100vh - 7rem), min-content) min-content;
+    grid-template-rows: 7rem min-content min-content;
     grid-template-columns: 22.4rem 1fr;
+    background-color: $color-light;
 }

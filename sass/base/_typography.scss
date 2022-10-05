@@ -1,0 +1,30 @@
+.header-card {
+    padding: 1.6rem 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    border-bottom: 1px solid #e3e6f0;
+    background-color: #f8f9fc;
+}
+
+.title {
+    grid-column: 1 / 2;
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #4e73df;
+    font-family: $font-display;
+}
+
+.icon {
+    grid-column: 2 / 3;
+    width: 5px;
+    fill: #e3e6f0;
+    cursor: pointer;
+    justify-self: end;
+}
+
+.text {
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: $color-secondary;
+}
