@@ -1,0 +1,14 @@
+@mixin gridSideBar {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: min-content 1fr min-content;
+    align-items: center;
+}
+
+@mixin textSideBar {
+    font-family: $font-display;
+    color: rgba(255,255,255,.9);
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-top: 3px;
+}

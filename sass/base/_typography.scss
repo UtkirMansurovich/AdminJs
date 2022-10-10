@@ -34,3 +34,21 @@
     font-weight: 400;
     color: $color-secondary;
 }
+
+.bottomLine {
+    border: none;
+    border-top: 1px solid rgba(255, 255, 255, 0.342);
+}
+
+.iconSideBar {
+    width: 1.4rem;
+    height: 1.4rem;
+    margin-right: .7rem;
+    fill: rgba(255,255,255,.3);
+}
+
+.iconArrow {
+    width: 1.4rem;
+    height: 1.4rem;
+    fill: rgba(255,255,255,.3);
+}

@@ -1,7 +1,78 @@
 .side-bar {
-    display: grid;
     grid-row: 1 / -1;
     grid-column: 1 / 2;
+    
+    background-image: linear-gradient(180deg, #7793e7 10%,$color-primary 100%);
+    display: grid;
+    grid-template-rows: 90px 50px repeat(3, 1fr);
+    grid-template-columns: 1fr;
+    box-shadow: 0 .15rem 1.75rem 0 rgba(58,59,69,.15);
+}
 
-    background-color: $color-success;
+.logo-sideBar {
+
+    display: grid;
+    justify-content: center;
+    align-items: center;
+
+    &__img {
+        width: 18rem;
+        object-fit: cover;
+        object-position: center;
+    }
+}
+
+.dashboard-sideBar {
+    display: grid;
+    align-items: center;
+    padding: 0 2rem;
+    margin-top: -5px;
+    
+    &__icon {
+        width: 1.4rem;
+        height: 1.4rem;
+        margin-right: 0.7rem;
+        fill: #fff;
+    }
+
+    &__text {
+        font-size: 1.4rem;
+        color: #fff;
+        font-family: $font-display;
+        font-weight: 700;
+        display: flex;
+        align-items: center;
+    }
+
+    &__textSpan {
+        margin-top: 3px;
+    }
+    
+}
+
+.interface-sideBar {
+    display: grid;
+    grid-template-rows: 35px repeat(2, 50px);
+    padding: 0 2rem;
+
+    &__title {
+        font-weight: 800;
+        font-size: 1.04rem;
+        color: rgba(255, 255, 255, 0.4);
+        text-transform: uppercase;
+        font-family: $font-display;
+        align-self: center;
+    }
+
+    &__components {
+        @include gridSideBar;
+    }
+
+    &__utilities {
+        @include gridSideBar;
+    }
+
+    &__text {
+        @include textSideBar;
+    }
 }

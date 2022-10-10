@@ -54,8 +54,26 @@ body {
   font-weight: 400;
   color: #858796; }
 
+.bottomLine {
+  border: none;
+  border-top: 1px solid rgba(255, 255, 255, 0.342); }
+
+.iconSideBar {
+  width: 1.4rem;
+  height: 1.4rem;
+  margin-right: .7rem;
+  fill: rgba(255, 255, 255, 0.3); }
+
+.iconArrow {
+  width: 1.4rem;
+  height: 1.4rem;
+  fill: rgba(255, 255, 255, 0.3); }
+
 .mb-small {
   margin-bottom: 1rem; }
+
+.mt-small {
+  margin-top: 1rem; }
 
 .form {
   max-width: 40rem;
@@ -318,10 +336,70 @@ body {
   font-size: 1.4rem; }
 
 .side-bar {
-  display: grid;
   grid-row: 1 / -1;
   grid-column: 1 / 2;
-  background-color: #1cc88a; }
+  background-image: linear-gradient(180deg, #7793e7 10%, #4e73df 100%);
+  display: grid;
+  grid-template-rows: 90px 50px repeat(3, 1fr);
+  grid-template-columns: 1fr;
+  box-shadow: 0 0.15rem 1.75rem 0 rgba(58, 59, 69, 0.15); }
+
+.logo-sideBar {
+  display: grid;
+  justify-content: center;
+  align-items: center; }
+  .logo-sideBar__img {
+    width: 18rem;
+    object-fit: cover;
+    object-position: center; }
+
+.dashboard-sideBar {
+  display: grid;
+  align-items: center;
+  padding: 0 2rem;
+  margin-top: -5px; }
+  .dashboard-sideBar__icon {
+    width: 1.4rem;
+    height: 1.4rem;
+    margin-right: 0.7rem;
+    fill: #fff; }
+  .dashboard-sideBar__text {
+    font-size: 1.4rem;
+    color: #fff;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 700;
+    display: flex;
+    align-items: center; }
+  .dashboard-sideBar__textSpan {
+    margin-top: 3px; }
+
+.interface-sideBar {
+  display: grid;
+  grid-template-rows: 35px repeat(2, 50px);
+  padding: 0 2rem; }
+  .interface-sideBar__title {
+    font-weight: 800;
+    font-size: 1.04rem;
+    color: rgba(255, 255, 255, 0.4);
+    text-transform: uppercase;
+    font-family: "Josefin Sans", sans-serif;
+    align-self: center; }
+  .interface-sideBar__components {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: min-content 1fr min-content;
+    align-items: center; }
+  .interface-sideBar__utilities {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: min-content 1fr min-content;
+    align-items: center; }
+  .interface-sideBar__text {
+    font-family: "Josefin Sans", sans-serif;
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-top: 3px; }
 
 .top-bar {
   background-color: #fff;
