@@ -64,6 +64,13 @@ body {
   margin-right: .7rem;
   fill: rgba(255, 255, 255, 0.3); }
 
+.textSpanSideBar {
+  font-family: "Josefin Sans", sans-serif;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 1.4rem;
+  font-weight: 500;
+  margin-top: 3px; }
+
 .iconArrow {
   width: 1.4rem;
   height: 1.4rem;
@@ -340,9 +347,10 @@ body {
   grid-column: 1 / 2;
   background-image: linear-gradient(180deg, #7793e7 10%, #4e73df 100%);
   display: grid;
-  grid-template-rows: 90px 50px repeat(3, 1fr);
+  grid-template-rows: 90px 50px repeat(3, min-content);
   grid-template-columns: 1fr;
-  box-shadow: 0 0.15rem 1.75rem 0 rgba(58, 59, 69, 0.15); }
+  box-shadow: 0 0.15rem 1.75rem 0 rgba(58, 59, 69, 0.15);
+  padding-top: 1rem; }
 
 .logo-sideBar {
   display: grid;
@@ -369,37 +377,73 @@ body {
     font-family: "Josefin Sans", sans-serif;
     font-weight: 700;
     display: flex;
-    align-items: center; }
+    align-items: center;
+    text-decoration: none; }
   .dashboard-sideBar__textSpan {
     margin-top: 3px; }
 
 .interface-sideBar {
   display: grid;
-  grid-template-rows: 35px repeat(2, 50px);
-  padding: 0 2rem; }
+  grid-template-rows: min-content repeat(2, 50px);
+  padding: 0 2rem;
+  margin-bottom: 7px; }
   .interface-sideBar__title {
     font-weight: 800;
     font-size: 1.04rem;
     color: rgba(255, 255, 255, 0.4);
     text-transform: uppercase;
     font-family: "Josefin Sans", sans-serif;
-    align-self: center; }
-  .interface-sideBar__components {
+    align-self: center;
+    margin-top: 10px; }
+  .interface-sideBar__components, .interface-sideBar__utilities {
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: min-content 1fr min-content;
-    align-items: center; }
-  .interface-sideBar__utilities {
-    display: grid;
-    grid-template-rows: 1fr;
-    grid-template-columns: min-content 1fr min-content;
-    align-items: center; }
-  .interface-sideBar__text {
+    align-items: center;
+    text-decoration: none;
+    transition: all .2s ease-out; }
+    .interface-sideBar__components:hover .iconSideBar, .interface-sideBar__utilities:hover .iconSideBar {
+      fill: #fff; }
+    .interface-sideBar__components:hover .textSpanSideBar, .interface-sideBar__utilities:hover .textSpanSideBar {
+      color: #fff; }
+
+.addons-sideBar {
+  display: grid;
+  grid-template-rows: min-content repeat(3, 50px);
+  padding: 0 2rem;
+  transition: all .2s ease-out; }
+  .addons-sideBar__title {
+    font-weight: 800;
+    font-size: 1.04rem;
+    color: rgba(255, 255, 255, 0.4);
+    text-transform: uppercase;
     font-family: "Josefin Sans", sans-serif;
-    color: rgba(255, 255, 255, 0.9);
-    font-size: 1.4rem;
-    font-weight: 700;
-    margin-top: 3px; }
+    align-self: center;
+    margin-top: 10px; }
+  .addons-sideBar__pages, .addons-sideBar__charts, .addons-sideBar__tables {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: min-content 1fr min-content;
+    align-items: center;
+    text-decoration: none;
+    transition: all .2s ease-out; }
+    .addons-sideBar__pages:hover .iconSideBar, .addons-sideBar__charts:hover .iconSideBar, .addons-sideBar__tables:hover .iconSideBar {
+      fill: #fff; }
+    .addons-sideBar__pages:hover .textSpanSideBar, .addons-sideBar__charts:hover .textSpanSideBar, .addons-sideBar__tables:hover .textSpanSideBar {
+      color: #fff; }
+
+.left-nav {
+  display: grid;
+  justify-content: center;
+  padding: 2rem; }
+  .left-nav__iconLeft {
+    width: 3.4rem;
+    height: 3.4rem;
+    margin: 0 auto;
+    fill: rgba(255, 255, 255, 0.2);
+    transition: all .2s ease-out; }
+    .left-nav__iconLeft:hover {
+      fill: rgba(255, 255, 255, 0.35); }
 
 .top-bar {
   background-color: #fff;
