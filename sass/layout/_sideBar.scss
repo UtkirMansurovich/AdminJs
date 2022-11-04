@@ -62,6 +62,10 @@
         @include titleSideBar;
     }
 
+    &__checkbox-components, &__checkbox-utilities {
+        display: none;
+    }
+
     &__components, &__utilities {
         @include gridSideBar;
 
@@ -72,6 +76,14 @@
         &:hover .textSpanSideBar {
             color: #fff;
         }
+    }
+
+    &__checkbox-components:checked ~ label .component-arrow {
+        transform: rotate(90deg);
+    }
+
+    &__checkbox-utilities:checked ~ label .utilities-arrow {
+        transform: rotate(90deg);
     }
 }
 

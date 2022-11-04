@@ -74,7 +74,9 @@ body {
 .iconArrow {
   width: 1.4rem;
   height: 1.4rem;
-  fill: rgba(255, 255, 255, 0.3); }
+  fill: rgba(255, 255, 255, 0.3);
+  transform: rotate(0);
+  transition: all .3s; }
 
 .mb-small {
   margin-bottom: 1rem; }
@@ -395,17 +397,24 @@ body {
     font-family: "Josefin Sans", sans-serif;
     align-self: center;
     margin-top: 10px; }
+  .interface-sideBar__checkbox-components, .interface-sideBar__checkbox-utilities {
+    display: none; }
   .interface-sideBar__components, .interface-sideBar__utilities {
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: min-content 1fr min-content;
     align-items: center;
     text-decoration: none;
-    transition: all .2s ease-out; }
+    transition: all .2s ease-out;
+    cursor: pointer; }
     .interface-sideBar__components:hover .iconSideBar, .interface-sideBar__utilities:hover .iconSideBar {
       fill: #fff; }
     .interface-sideBar__components:hover .textSpanSideBar, .interface-sideBar__utilities:hover .textSpanSideBar {
       color: #fff; }
+  .interface-sideBar__checkbox-components:checked ~ label .component-arrow {
+    transform: rotate(90deg); }
+  .interface-sideBar__checkbox-utilities:checked ~ label .utilities-arrow {
+    transform: rotate(90deg); }
 
 .addons-sideBar {
   display: grid;
@@ -426,7 +435,8 @@ body {
     grid-template-columns: min-content 1fr min-content;
     align-items: center;
     text-decoration: none;
-    transition: all .2s ease-out; }
+    transition: all .2s ease-out;
+    cursor: pointer; }
     .addons-sideBar__pages:hover .iconSideBar, .addons-sideBar__charts:hover .iconSideBar, .addons-sideBar__tables:hover .iconSideBar {
       fill: #fff; }
     .addons-sideBar__pages:hover .textSpanSideBar, .addons-sideBar__charts:hover .textSpanSideBar, .addons-sideBar__tables:hover .textSpanSideBar {
